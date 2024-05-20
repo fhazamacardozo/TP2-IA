@@ -5,13 +5,7 @@ from genetico.cruzamiento import cruzar_padres
 from genetico.mutacion import mutar_cromosoma
 import random
 
-def ejecutar_algoritmo(origen, destino):
-    # Parámetros del algoritmo
-    tamano_poblacion = 200
-    num_generaciones = 50
-    probabilidad_cruzamiento = 0.8
-    probabilidad_mutacion = 0.2
-
+def ejecutar_algoritmo(tamano_poblacion, num_generaciones, probabilidad_cruzamiento, probabilidad_mutacion, origen, destino):
     # Generar población inicial
     poblacion = generar_poblacion_inicial(tamano_poblacion, origen, destino)
 
