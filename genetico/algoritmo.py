@@ -8,7 +8,6 @@ import random
 def ejecutar_algoritmo(tamano_poblacion, num_generaciones, probabilidad_cruzamiento, probabilidad_mutacion, origen, destino):
     # Generar población inicial
     poblacion = generar_poblacion_inicial(tamano_poblacion, origen, destino)
-
     for generacion in range(num_generaciones):
         # Evaluar la población y obtener la población válida y sus aptitudes
         poblacion_valida, aptitudes = evaluar_poblacion(poblacion,origen,destino)
@@ -46,7 +45,15 @@ def ejecutar_algoritmo(tamano_poblacion, num_generaciones, probabilidad_cruzamie
         return
     
     mejor_individuo = poblacion_valida[aptitudes.index(min(aptitudes))]
+    mejor_aptitud = min(aptitudes)
+    tiempo_total_minutos = sum(segmento[2] for segmento in mejor_individuo)  # Asumiendo que el tiempo es el tercer elemento de cada segmento
+
+    # Convertir tiempo total a horas y minutos
+    horas = tiempo_total_minutos // 60
+    minutos = tiempo_total_minutos % 60
+
     print("Mejor ruta encontrada:", mejor_individuo)
-    print("Costo total:", min(aptitudes))
+    print("Costo total:", mejor_aptitud)
+    print(f"Tiempo total del recorrido: {horas} horas y {minutos} minutos")
 
-
+    

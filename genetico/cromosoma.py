@@ -10,7 +10,6 @@ def generar_poblacion_inicial(tamano_poblacion, origen, destino):
     return poblacion
 
 def generar_cromosoma_aleatorio(origen, destino):
-    #print("Cromo")
     # Obtenemos todos los segmentos posibles
     segmentos = obtener_segmentos()
     # Lista para almacenar las ciudades visitadas en orden

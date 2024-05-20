@@ -1,3 +1,5 @@
+#Segmento = [(Origen, Destino, Tiempo de Recorrido Promedio (minutos), 
+#            Distancia (kms), Costo total de peajes en el recorrido (pesos)]
 def obtener_segmentos():
     segmentos = [
         ('A', 'B', 120, 160, 1800),
