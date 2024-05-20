@@ -18,7 +18,7 @@ def ejecutar_algoritmo(tamano_poblacion, num_generaciones, probabilidad_cruzamie
             poblacion = generar_poblacion_inicial(tamano_poblacion, origen, destino)
             continue
 
-        # Seleccionar padres
+        # Seleccionar padres por torneo, no se si esto esta demas, con el filtro de la evaluacion alcanza
         padres = seleccionar_padres(poblacion_valida, aptitudes)
         # Cruzamiento
         nueva_poblacion = []

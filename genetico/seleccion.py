@@ -1,6 +1,7 @@
 import random
 
 def seleccionar_padres(poblacion, aptitudes):
+    #Torneo
     if len(poblacion) < 3:
         raise ValueError("No hay suficientes cromosomas válidos en la población.")
 
