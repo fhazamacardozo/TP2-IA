@@ -27,7 +27,6 @@ def ejecutar_algoritmo(origen, destino):
 
         # Seleccionar padres
         padres = seleccionar_padres(poblacion_valida, aptitudes)
-
         # Cruzamiento
         nueva_poblacion = []
         while len(nueva_poblacion) < tamano_poblacion:
