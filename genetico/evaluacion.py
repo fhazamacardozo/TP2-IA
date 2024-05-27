@@ -1,3 +1,5 @@
+
+from config import datos_vehiculo
 def validar_cromosoma(cromosoma,origen,destino):
     # Verificar que el cromosoma tenga al menos un segmento
     if len(cromosoma) < 1:
@@ -23,9 +25,9 @@ def validar_cromosoma(cromosoma,origen,destino):
     return True
 
 def evaluar_cromosoma(cromosoma):
-    precio_hora_conductor = 100  # Costo por hora de trabajo del conductor en pesos
-    precio_litro_combustible = 150  # Precio por litro de combustible en pesos
-    autonomia_vehiculo = 10  # Autonomía del vehículo en km/l
+    precio_hora_conductor = datos_vehiculo['precio_hora_conductor']  # Costo por hora de trabajo del conductor en pesos
+    precio_litro_combustible = datos_vehiculo['precio_litro_combustible']  # Precio por litro de combustible en pesos
+    autonomia_vehiculo = datos_vehiculo['autonomia_vehiculo']  # Autonomía del vehículo en km/l
 
     tiempo_total = sum(segmento[2] for segmento in cromosoma)
     distancia_total = sum(segmento[3] for segmento in cromosoma)
