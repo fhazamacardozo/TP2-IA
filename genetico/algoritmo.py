@@ -52,7 +52,8 @@ def ejecutar_algoritmo(tamano_poblacion, num_generaciones, probabilidad_cruzamie
     horas = tiempo_total_minutos // 60
     minutos = tiempo_total_minutos % 60
 
-    print("Mejor ruta encontrada:", mejor_individuo)
+    ruta = [origen] + [segmento[1] for segmento in mejor_individuo]
+    print("Mejor ruta encontrada:", ruta)
     print("Costo total:", mejor_aptitud)
     print(f"Tiempo total del recorrido: {horas} horas y {minutos} minutos")
 
