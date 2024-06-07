@@ -38,10 +38,46 @@ def evaluar_cromosoma(cromosoma):
 
     costo_total = costo_combustible + costo_horas_conductor + peajes_total
 
-    return costo_total
+    return costo_total, tiempo_total, distancia_total
 
 def evaluar_poblacion(poblacion,origen,destino):
     # Filtrar cromosomas válidos y evaluar solo los válidos
     poblacion_valida = [individuo for individuo in poblacion if validar_cromosoma(individuo,origen,destino)]
     aptitudes = [evaluar_cromosoma(individuo) for individuo in poblacion_valida]
     return poblacion_valida, aptitudes
+
+def mostrar_top_10(poblacion):
+    # Evaluar cada cromosoma de la población
+    evaluaciones = [(cromosoma, *evaluar_cromosoma(cromosoma)) for cromosoma in poblacion]
+    
+    # Ordenar la población por costo total (aptitud)
+    evaluaciones_ordenadas = sorted(evaluaciones, key=lambda x: x[1])
+
+    print("\nTop 10 de la población:")
+    
+    # Utilizar un conjunto para almacenar cromosomas únicos
+    cromosomas_vistos = set()
+    
+    for i, (cromosoma, costo_total, tiempo_total, distancia_total) in enumerate(evaluaciones_ordenadas[:10]):
+        # Convertir tiempo total de minutos a horas y minutos
+        horas = int(tiempo_total // 60)
+        minutos = int(tiempo_total % 60)
+        ruta = ' -> '.join([segmento[0] for segmento in cromosoma] + [cromosoma[-1][1]])
+        
+        # Si el cromosoma ya ha sido visto, continuar con el siguiente
+        if tuple(cromosoma) in cromosomas_vistos:
+            continue
+        
+        # Agregar el cromosoma al conjunto de cromosomas vistos
+        cromosomas_vistos.add(tuple(cromosoma))
+        
+        print(f"\nIndividuo {i + 1}:")
+        print(f"  Costo total: {costo_total:.2f}")
+        print(f"  Ruta: {ruta}")
+        print(f"  Tiempo total: {horas} horas {minutos} minutos")
+        print(f"  Distancia total: {distancia_total:.2f} km")
+        print(cromosoma)
+        
+        if len(cromosomas_vistos) == 10:
+            break
+
