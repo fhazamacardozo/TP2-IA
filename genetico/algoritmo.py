@@ -46,6 +46,8 @@ def ejecutar_algoritmo(tamano_poblacion, num_generaciones, probabilidad_cruzamie
         print("No se encontró una solución válida.")
         return
 
+    print(f"Generacion {num_generaciones} - Cantidad de individuos validos: {len(poblacion_valida)} - Cantidad de unicos: {cantidad_individuos_unicos}")
+
     mostrar_top_10(poblacion_valida)
 
     

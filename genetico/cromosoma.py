@@ -40,5 +40,31 @@ def generar_cromosoma_aleatorio(origen, destino):
 
     return cromosoma
 
+#Version menos restrictiva
+def generar_cromosoma_aleatorio2(origen, destino):
+    segmentos = obtener_segmentos()
+    ciudades_visitadas = [origen]
+    cromosoma = []
+
+    ciudad_actual = origen
+
+    while ciudad_actual != destino:
+        posibles_segmentos = [seg for seg in segmentos if seg[0] == ciudad_actual]
+        if not posibles_segmentos:
+            return None
+
+        # Seleccionar un segmento aleatorio
+        segmento_actual = random.choice(posibles_segmentos)
+        
+        # Agregar el segmento al cromosoma
+        cromosoma.append(segmento_actual)
+        
+        # Marcar la ciudad de destino del segmento como visitada
+        ciudades_visitadas.append(segmento_actual[1])
+        
+        # La ciudad actual ahora es la ciudad de destino del segmento
+        ciudad_actual = segmento_actual[1]
+
+    return cromosoma
 
 

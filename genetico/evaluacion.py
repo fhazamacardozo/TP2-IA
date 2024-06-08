@@ -49,10 +49,8 @@ def evaluar_poblacion(poblacion, origen, destino):
             # Si el individuo es válido, lo agregamos a la población válida
             poblacion_valida.append(individuo)
             # Agregamos el individuo al conjunto de individuos únicos
-            individuos_unicos.add(tuple(individuo))
-
-    # Convertimos la población válida de nuevo a lista
-    poblacion_valida = list(poblacion_valida)
+            cromosoma_tupla = tuple(individuo)
+            individuos_unicos.add(cromosoma_tupla)
 
     # Calculamos la cantidad de individuos únicos
     cantidad_individuos_unicos = len(individuos_unicos)
@@ -73,27 +71,34 @@ def mostrar_top_10(poblacion):
     
     # Utilizar un conjunto para almacenar cromosomas únicos
     cromosomas_vistos = set()
+    contador = 0
     
-    for i, (cromosoma, costo_total, tiempo_total, distancia_total) in enumerate(evaluaciones_ordenadas[:10]):
+    for (cromosoma, costo_total, tiempo_total, distancia_total) in evaluaciones_ordenadas:
         # Convertir tiempo total de minutos a horas y minutos
         horas = int(tiempo_total // 60)
         minutos = int(tiempo_total % 60)
         ruta = ' -> '.join([segmento[0] for segmento in cromosoma] + [cromosoma[-1][1]])
         
+        # Convertir cada segmento de la lista cromosoma a una tupla
+        cromosoma_tupla = tuple(cromosoma)
+        
         # Si el cromosoma ya ha sido visto, continuar con el siguiente
-        if tuple(cromosoma) in cromosomas_vistos:
+        if cromosoma_tupla in cromosomas_vistos:
             continue
         
         # Agregar el cromosoma al conjunto de cromosomas vistos
-        cromosomas_vistos.add(tuple(cromosoma))
+        cromosomas_vistos.add(cromosoma_tupla)
         
-        print(f"\nIndividuo {i + 1}:")
+        print(f"\nIndividuo {contador + 1}:")
         print(f"  Costo total: {costo_total:.2f}")
         print(f"  Ruta: {ruta}")
         print(f"  Tiempo total: {horas} horas {minutos} minutos")
         print(f"  Distancia total: {distancia_total:.2f} km")
-        print( "  Cromosoma crudo: ",cromosoma)
+        print(f"  Cromosoma crudo: {cromosoma}")
         
-        if len(cromosomas_vistos) == 10:
+        contador += 1
+        
+        if contador == 10:
             break
+
 
