@@ -1,12 +1,19 @@
 import random
 from datos.rutas import obtener_segmentos
 
+import random
+from datos.rutas import obtener_segmentos
+
 def generar_poblacion_inicial(tamano_poblacion, origen, destino):
     poblacion = []
-    for _ in range(tamano_poblacion):
+    intentos = 0  # Para evitar un bucle infinito en caso de que no se puedan generar más cromosomas únicos
+
+    while len(poblacion) < tamano_poblacion and intentos < tamano_poblacion * 10:
         cromosoma = generar_cromosoma_aleatorio(origen, destino)
-        if cromosoma:
+        if cromosoma and cromosoma not in poblacion:
             poblacion.append(cromosoma)
+        intentos += 1
+
     return poblacion
 
 def generar_cromosoma_aleatorio(origen, destino):
@@ -27,7 +34,7 @@ def generar_cromosoma_aleatorio(origen, destino):
         # Si no hay segmentos disponibles, no se puede continuar con una ruta válida
         if not posibles_segmentos:
             return None  
-        # Elegimos aleatoriamente un segmento de los posibles
+        # Elegimos aleatoriamente un segmento de los posibles, pero fomentamos la variación
         segmento_actual = random.choice(posibles_segmentos)
         # Agregamos el segmento al cromosoma
         cromosoma.append(segmento_actual)
@@ -35,13 +42,10 @@ def generar_cromosoma_aleatorio(origen, destino):
         ciudades_visitadas.append(segmento_actual[1])
         # La ciudad actual ahora es la ciudad de destino del segmento
         ciudad_actual = segmento_actual[1]
-        
-    #print("Ciudades visitadas:", ciudades_visitadas)
-
     return cromosoma
 
 #Version menos restrictiva
-def generar_cromosoma_aleatorio2(origen, destino):
+def generar_cromosoma_aleatorio1(origen, destino):
     segmentos = obtener_segmentos()
     ciudades_visitadas = [origen]
     cromosoma = []

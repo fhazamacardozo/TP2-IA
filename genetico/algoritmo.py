@@ -6,6 +6,8 @@ from genetico.mutacion import mutar_cromosoma
 from genetico.evaluacion import mostrar_top_10
 import random
 import matplotlib.pyplot as plt
+import matplotlib
+#matplotlib.use('Agg') #cambia backend 
 
 def ejecutar_algoritmo(tamano_poblacion, num_generaciones, probabilidad_cruzamiento, probabilidad_mutacion, origen, destino):
     # Generar población inicial
@@ -73,5 +75,6 @@ def ejecutar_algoritmo(tamano_poblacion, num_generaciones, probabilidad_cruzamie
     plt.title('Comportamiento General de la Función de Aptitud')
     plt.legend()
     plt.show()
-
+    #plt.savefig('grafico_aptitud.png')  # Guardar el gráfico en un archivo
+    #plt.close() 
     
