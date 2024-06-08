@@ -40,11 +40,27 @@ def evaluar_cromosoma(cromosoma):
 
     return costo_total, tiempo_total, distancia_total
 
-def evaluar_poblacion(poblacion,origen,destino):
-    # Filtrar cromosomas válidos y evaluar solo los válidos
-    poblacion_valida = [individuo for individuo in poblacion if validar_cromosoma(individuo,origen,destino)]
+def evaluar_poblacion(poblacion, origen, destino):
+    poblacion_valida = []
+    individuos_unicos = set()
+
+    for individuo in poblacion:
+        if validar_cromosoma(individuo, origen, destino):
+            # Si el individuo es válido, lo agregamos a la población válida
+            poblacion_valida.append(individuo)
+            # Agregamos el individuo al conjunto de individuos únicos
+            individuos_unicos.add(tuple(individuo))
+
+    # Convertimos la población válida de nuevo a lista
+    poblacion_valida = list(poblacion_valida)
+
+    # Calculamos la cantidad de individuos únicos
+    cantidad_individuos_unicos = len(individuos_unicos)
+
+    # Evaluamos los cromosomas válidos y devolvemos la población válida y la cantidad de individuos únicos
     aptitudes = [evaluar_cromosoma(individuo) for individuo in poblacion_valida]
-    return poblacion_valida, aptitudes
+    return poblacion_valida, aptitudes, cantidad_individuos_unicos
+
 
 def mostrar_top_10(poblacion):
     # Evaluar cada cromosoma de la población
@@ -76,7 +92,7 @@ def mostrar_top_10(poblacion):
         print(f"  Ruta: {ruta}")
         print(f"  Tiempo total: {horas} horas {minutos} minutos")
         print(f"  Distancia total: {distancia_total:.2f} km")
-        print(cromosoma)
+        print( "  Cromosoma crudo: ",cromosoma)
         
         if len(cromosomas_vistos) == 10:
             break

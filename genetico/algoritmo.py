@@ -9,10 +9,11 @@ import random
 def ejecutar_algoritmo(tamano_poblacion, num_generaciones, probabilidad_cruzamiento, probabilidad_mutacion, origen, destino):
     # Generar población inicial
     poblacion = generar_poblacion_inicial(tamano_poblacion, origen, destino)
+    print("Individuos poblacion inicial: ", len(poblacion))
     for generacion in range(num_generaciones):
         # Evaluar la población y obtener la población válida y sus aptitudes
-        poblacion_valida, aptitudes = evaluar_poblacion(poblacion,origen,destino)
-        print(f"Generacion {generacion} - Cantidad de individuos validos: {len(poblacion_valida)}")
+        poblacion_valida, aptitudes, cantidad_individuos_unicos = evaluar_poblacion(poblacion,origen,destino)
+        print(f"Generacion {generacion} - Cantidad de individuos validos: {len(poblacion_valida)} - Cantidad de unicos: {cantidad_individuos_unicos}")
 
         if len(poblacion_valida) < 3:
             print(f"No hay suficientes cromosomas válidos en la generación {generacion}. Re-generando población.")
@@ -40,7 +41,7 @@ def ejecutar_algoritmo(tamano_poblacion, num_generaciones, probabilidad_cruzamie
         poblacion = nueva_poblacion
 
     # Evaluar la población final
-    poblacion_valida, aptitudes = evaluar_poblacion(poblacion,origen,destino)
+    poblacion_valida, aptitudes, cantidad_individuos_unicos = evaluar_poblacion(poblacion,origen,destino)
     if not poblacion_valida:
         print("No se encontró una solución válida.")
         return
