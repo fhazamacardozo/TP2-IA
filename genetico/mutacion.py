@@ -1,6 +1,7 @@
 import random
 from datos.rutas import obtener_segmentos
 
+#Tipo de Mutación: Mutación Condicional de Punto
 def mutar_cromosoma(cromosoma, probabilidad_mutacion):
     nuevo_cromosoma = cromosoma.copy()
     segmentos_disponibles = obtener_segmentos()
@@ -18,6 +19,20 @@ def mutar_cromosoma(cromosoma, probabilidad_mutacion):
                     if conecta_anterior or conecta_siguiente:
                         segmentos_validos.append(seg)
 
+            if segmentos_validos:
+                nuevo_segmento = random.choice(segmentos_validos)
+                nuevo_cromosoma[i] = nuevo_segmento
+
+    return nuevo_cromosoma
+
+#Tipo de Mutación: Mutación Aleatoria de Punto
+def mutar_cromosoma1(cromosoma, probabilidad_mutacion):
+    nuevo_cromosoma = cromosoma.copy()
+    segmentos_disponibles = obtener_segmentos()
+
+    for i in range(len(nuevo_cromosoma)):
+        if random.random() < probabilidad_mutacion:
+            segmentos_validos = [seg for seg in segmentos_disponibles if seg not in nuevo_cromosoma]
             if segmentos_validos:
                 nuevo_segmento = random.choice(segmentos_validos)
                 nuevo_cromosoma[i] = nuevo_segmento
