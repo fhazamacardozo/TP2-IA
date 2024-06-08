@@ -137,62 +137,62 @@ def obtener_segmentos():
         ('Catamarca', 'Salta', 601, 534, 1800),
         
         # La Rioja
-        ('La Rioja', 'Córdoba', 240, 400, 300),
-        ('La Rioja', 'Catamarca', 180, 300, 200),
-        ('La Rioja', 'San Juan', 180, 300, 200),
-        ('La Rioja', 'San Luis', 300, 500, 400),
+        ('La Rioja', 'Córdoba', 443, 467, 720),
+        ('La Rioja', 'Catamarca', 122, 157, 500),
+        ('La Rioja', 'San Juan', 423, 443, 1200),
+        ('La Rioja', 'San Luis', 365, 524, 1400),
         
         # San Juan
-        ('San Juan', 'La Rioja', 180, 300, 200),
-        ('San Juan', 'Mendoza', 180, 300, 200),
-        ('San Juan', 'San Luis', 360, 600, 500),
+        ('San Juan', 'La Rioja', 423, 443, 1200),
+        ('San Juan', 'Mendoza', 142, 170, 600),
+        ('San Juan', 'San Luis', 242, 325, 1500),
         
         # Mendoza
-        ('Mendoza', 'San Juan', 180, 300, 200),
-        ('Mendoza', 'San Luis', 180, 300, 200),
-        ('Mendoza', 'La Pampa', 300, 500, 400),
-        ('Mendoza', 'Neuquén', 420, 700, 600),
+        ('Mendoza', 'San Juan', 143, 170, 600),
+        ('Mendoza', 'San Luis', 186, 258, 975),
+        ('Mendoza', 'La Pampa', 652, 829, 4200),
+        ('Mendoza', 'Neuquén', 562, 788, 3600),
         
         # San Luis
-        ('San Luis', 'La Pampa', 240, 400, 300),
-        ('San Luis', 'Córdoba', 180, 300, 200),
-        ('San Luis', 'La Rioja', 300, 500, 400),
-        ('San Luis', 'San Juan', 360, 600, 500),
-        ('San Luis', 'Mendoza', 180, 300, 200),
+        ('San Luis', 'La Pampa', 501, 638, 3000),
+        ('San Luis', 'Córdoba', 305, 429, 2460),
+        ('San Luis', 'La Rioja', 360, 521, 1400),
+        ('San Luis', 'San Juan', 242, 325, 1500),
+        ('San Luis', 'Mendoza', 186, 258, 975),
         
         # Neuquén
-        ('Neuquén', 'Mendoza', 420, 700, 600),
-        ('Neuquén', 'Río Negro', 240, 400, 300),
-        ('Neuquén', 'La Pampa', 360, 600, 450),
-        ('Neuquén', 'Chubut', 360, 600, 500),
+        ('Neuquén', 'Mendoza', 562, 788, 3600),
+        ('Neuquén', 'Río Negro', 405, 556, 3000),
+        ('Neuquén', 'La Pampa', 407, 382, 1450),
+        ('Neuquén', 'Chubut', 708, 951, 3200),
         
         # Río Negro
-        ('Río Negro', 'Neuquén', 240, 400, 300),
-        ('Río Negro', 'Chubut', 300, 500, 400),
-        ('Río Negro', 'La Pampa', 360, 600, 450),
+        ('Río Negro', 'Neuquén', 405, 556, 3000),
+        ('Río Negro', 'Chubut', 540, 873, 2600),
+        ('Río Negro', 'La Pampa', 442, 519, 2450),
         
         # Chubut
-        ('Chubut', 'Río Negro', 300, 500, 400),
-        ('Chubut', 'Neuquén', 360, 600, 500),
-        ('Chubut', 'Santa Cruz', 480, 800, 700),
+        ('Chubut', 'Río Negro', 540, 873, 2600),
+        ('Chubut', 'Neuquén', 708, 951, 3200),
+        ('Chubut', 'Santa Cruz', 831, 960, 4000),
         
         # Santa Cruz
-        ('Santa Cruz', 'Chubut', 480, 800, 700),
-        ('Santa Cruz', 'Tierra del Fuego', 720, 1200, 1000),
+        ('Santa Cruz', 'Chubut', 831, 960, 4000),
+        ('Santa Cruz', 'Tierra del Fuego', 818, 979, 4000),
         
         # Tierra del Fuego
-        ('Tierra del Fuego', 'Santa Cruz', 720, 1200, 1000),
+        ('Tierra del Fuego', 'Santa Cruz', 818, 979, 4000),
         
         # Salta
-        ('Salta', 'Jujuy', 120, 200, 150),
-        ('Salta', 'Formosa', 360, 600, 500),
-        ('Salta', 'Chaco', 420, 700, 600),
-        ('Salta', 'Santiago del Estero', 420, 700, 600),
-        ('Salta', 'Catamarca', 360, 600, 500),
+        ('Salta', 'Jujuy', 353, 250, 1500),
+        ('Salta', 'Formosa', 725, 983, 4000),
+        ('Salta', 'Chaco', 453, 598, 900),
+        ('Salta', 'Santiago del Estero', 431, 438, 900),
+        ('Salta', 'Catamarca', 519, 537, 1800),
         ('Salta', 'Tucumán', 220, 360, 250),
         
         # Jujuy
-        ('Jujuy', 'Salta', 120, 200, 150),
+        ('Jujuy', 'Salta', 353, 250, 1500),
     ]
     return segmentos
 
