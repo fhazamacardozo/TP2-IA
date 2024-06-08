@@ -57,22 +57,23 @@ def obtener_segmentos_OLD():
     ]
     return segmentos
 
-
+#Segmento = [(Origen, Destino, Tiempo de Recorrido Promedio (minutos), 
+#            Distancia (kms), Costo total de peajes en el recorrido (pesos)]
 def obtener_segmentos():
     segmentos = [
         # Buenos Aires
-        ('Buenos Aires', 'Santa Fe', 300, 480, 500),
-        ('Buenos Aires', 'Córdoba', 420, 700, 600),
-        ('Buenos Aires', 'La Pampa', 350, 600, 400),
-        ('Buenos Aires', 'Entre Ríos', 240, 400, 300),
+        ('Buenos Aires', 'Santa Fe', 437, 642, 4229),
+        ('Buenos Aires', 'Córdoba', 420, 700, 5489),
+        ('Buenos Aires', 'La Pampa', 600, 837, 4306),
+        ('Buenos Aires', 'Entre Ríos', 240, 321, 1720),
         
         # Santa Fe
-        ('Santa Fe', 'Buenos Aires', 300, 480, 500),
-        ('Santa Fe', 'Entre Ríos', 120, 200, 150),
-        ('Santa Fe', 'Córdoba', 180, 320, 200),
-        ('Santa Fe', 'Santiago del Estero', 240, 400, 300),
-        ('Santa Fe', 'Chaco', 220, 360, 250),
-        ('Santa Fe', 'Corrientes', 300, 500, 400),
+        ('Santa Fe', 'Buenos Aires', 300, 480, 3560),
+        ('Santa Fe', 'Entre Ríos', 300, 222, 1100),
+        ('Santa Fe', 'Córdoba', 270, 369, 2730),
+        ('Santa Fe', 'Santiago del Estero', 370, 611, 1800),
+        ('Santa Fe', 'Chaco', 460, 693, 1900),
+        ('Santa Fe', 'Corrientes', 450, 565, 900),
 
         # Córdoba
         ('Córdoba', 'Buenos Aires', 420, 700, 600),
@@ -83,56 +84,57 @@ def obtener_segmentos():
         ('Córdoba', 'Catamarca', 300, 500, 350),
         
         # La Pampa
-        ('La Pampa', 'Buenos Aires', 350, 600, 400),
-        ('La Pampa', 'Córdoba', 420, 700, 600),
-        ('La Pampa', 'Mendoza', 300, 500, 400),
-        ('La Pampa', 'Río Negro', 360, 600, 450),
-        ('La Pampa', 'San Luis', 240, 400, 300),
+        ('La Pampa', 'Buenos Aires', 612, 832, 3906),
+        ('La Pampa', 'Córdoba', 661, 835, 2160),
+        ('La Pampa', 'Mendoza', 720, 900, 1200),
+        ('La Pampa', 'Río Negro', 360, 600, 950),
+        ('La Pampa', 'San Luis', 480, 630, 1000),
+        ('La Pampa', 'Neuquen', 300, 381, 900),
         
         # Entre Ríos
-        ('Entre Ríos', 'Buenos Aires', 240, 400, 300),
-        ('Entre Ríos', 'Santa Fe', 120, 200, 150),
-        ('Entre Ríos', 'Corrientes', 180, 300, 200),
+        ('Entre Ríos', 'Buenos Aires', 335, 323, 1050),
+        ('Entre Ríos', 'Santa Fe', 336, 407, 1100),
+        ('Entre Ríos', 'Corrientes', 494, 650, 900),
         
         # Corrientes
-        ('Corrientes', 'Entre Ríos', 180, 300, 200),
-        ('Corrientes', 'Santa Fe', 300, 500, 400),
-        ('Corrientes', 'Chaco', 120, 200, 150),
-        ('Corrientes', 'Misiones', 240, 400, 300),
+        ('Corrientes', 'Entre Ríos', 494, 650, 900),
+        ('Corrientes', 'Santa Fe', 440, 417, 900),
+        ('Corrientes', 'Chaco', 186, 243, 1800),
+        ('Corrientes', 'Misiones', 518, 503, 1800),
         
         # Misiones
-        ('Misiones', 'Corrientes', 240, 400, 300),
+        ('Misiones', 'Corrientes', 518, 503, 1800),
         
         # Chaco
-        ('Chaco', 'Santa Fe', 220, 360, 250),
-        ('Chaco', 'Corrientes', 120, 200, 150),
-        ('Chaco', 'Formosa', 180, 300, 200),
-        ('Chaco', 'Santiago del Estero', 300, 500, 350),
-        ('Chaco', 'Salta', 420, 700, 600),
+        ('Chaco', 'Santa Fe', 3880, 588, 1300),
+        ('Chaco', 'Corrientes', 191, 243, 1800),
+        ('Chaco', 'Formosa', 298, 371, 1800),
+        ('Chaco', 'Santiago del Estero', 330, 438, 1500),
+        ('Chaco', 'Salta', 452, 595, 900),
         
         # Formosa
-        ('Formosa', 'Chaco', 180, 300, 200),
-        ('Formosa', 'Salta', 360, 600, 500),
+        ('Formosa', 'Chaco', 354, 371, 2100),
+        ('Formosa', 'Salta', 720, 986, 3000),
         
         # Santiago del Estero
-        ('Santiago del Estero', 'Santa Fe', 240, 400, 300),
-        ('Santiago del Estero', 'Córdoba', 220, 380, 250),
-        ('Santiago del Estero', 'Chaco', 300, 500, 350),
-        ('Santiago del Estero', 'Tucumán', 200, 320, 250),
-        ('Santiago del Estero', 'Catamarca', 240, 400, 300),
-        ('Santiago del Estero', 'Salta', 420, 700, 600),
+        ('Santiago del Estero', 'Santa Fe', 384, 516, 1800),
+        ('Santiago del Estero', 'Córdoba', 430, 436, 720),
+        ('Santiago del Estero', 'Chaco', 434, 439, 2500),
+        ('Santiago del Estero', 'Tucumán', 140, 164, 900),
+        ('Santiago del Estero', 'Catamarca', 320, 290, 1300),
+        ('Santiago del Estero', 'Salta', 431, 435, 900),
         
         # Tucumán
-        ('Tucumán', 'Santiago del Estero', 200, 320, 250),
-        ('Tucumán', 'Salta', 220, 360, 250),
-        ('Tucumán', 'Catamarca', 120, 200, 150),
+        ('Tucumán', 'Santiago del Estero', 144, 161, 900),
+        ('Tucumán', 'Salta', 235, 304, 1800),
+        ('Tucumán', 'Catamarca', 189, 231, 1500),
         
         # Catamarca
-        ('Catamarca', 'Córdoba', 300, 500, 350),
+        ('Catamarca', 'Córdoba', 418, 443, 300),
         ('Catamarca', 'Santiago del Estero', 240, 400, 300),
-        ('Catamarca', 'Tucumán', 120, 200, 150),
-        ('Catamarca', 'La Rioja', 180, 300, 200),
-        ('Catamarca', 'Salta', 360, 600, 500),
+        ('Catamarca', 'Tucumán', 185, 232, 1500),
+        ('Catamarca', 'La Rioja', 120, 157, 700),
+        ('Catamarca', 'Salta', 601, 534, 1800),
         
         # La Rioja
         ('La Rioja', 'Córdoba', 240, 400, 300),
