@@ -1,0 +1,23 @@
+Individuos poblacion inicial:  4076
+Generacion 0 - Cantidad de individuos validos: 4076 - Cantidad de unicos: 4076
+Generacion 1 - Cantidad de individuos validos: 44 - Cantidad de unicos: 41
+Generacion 2 - Cantidad de individuos validos: 79 - Cantidad de unicos: 17
+Generacion 3 - Cantidad de individuos validos: 103 - Cantidad de unicos: 11
+Generacion 4 - Cantidad de individuos validos: 126 - Cantidad de unicos: 7
+Generacion 5 - Cantidad de individuos validos: 128 - Cantidad de unicos: 2
+
+Top 10 de la poblaci▒n:
+
+Individuo 1:
+  Costo total: 107161.67
+  Ruta: Jujuy -> Salta -> Tucum▒n -> Catamarca -> La Rioja -> San Juan -> Mendoza -> Neuqu▒n -> Chubut -> Santa Cruz -> Tierra del Fuego
+  Tiempo total: 72 horas 46 minutos
+  Distancia total: 5289.00 km
+  Cromosoma crudo: [('Jujuy', 'Salta', 353, 250, 1500), ('Salta', 'Tucum▒n', 220, 360, 250), ('Tucum▒n', 'Catamarca', 189, 231, 1500), ('Catamarca', 'La Rioja', 120, 157, 700), ('La Rioja', 'San Juan', 423, 443, 1200), ('San Juan', 'Mendoza', 142, 170, 600), ('Mendoza', 'Neuqu▒n', 562, 788, 3600), ('Neuqu▒n', 'Chubut', 708, 951, 3200), ('Chubut', 'Santa Cruz', 831, 960, 4000), ('Santa Cruz', 'Tierra del Fuego', 818, 979, 4000)]
+
+Individuo 2:
+  Costo total: 110236.67
+  Ruta: Jujuy -> Salta -> Santiago del Estero -> Catamarca -> La Rioja -> San Juan -> Mendoza -> Neuqu▒n -> Chubut -> Santa Cruz -> Tierra del Fuego
+  Tiempo total: 78 horas 28 minutos
+  Distancia total: 5426.00 km
+  Cromosoma crudo: [('Jujuy', 'Salta', 353, 250, 1500), ('Salta', 'Santiago del Estero', 431, 438, 900), ('Santiago del Estero', 'Catamarca', 320, 290, 1300), ('Catamarca', 'La Rioja', 120, 157, 700), ('La Rioja', 'San Juan', 423, 443, 1200), ('San Juan', 'Mendoza', 142, 170, 600), ('Mendoza', 'Neuqu▒n', 562, 788, 3600), ('Neuqu▒n', 'Chubut', 708, 951, 3200), ('Chubut', 'Santa Cruz', 831, 960, 4000), ('Santa Cruz', 'Tierra del Fuego', 818, 979, 4000)]

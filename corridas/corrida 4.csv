@@ -1,0 +1,78 @@
+Individuos poblacion inicial:  4154
+Generacion 0 - Cantidad de individuos validos: 4154 - Cantidad de unicos: 4154
+Generacion 1 - Cantidad de individuos validos: 42 - Cantidad de unicos: 41
+Generacion 2 - Cantidad de individuos validos: 103 - Cantidad de unicos: 19
+Generacion 3 - Cantidad de individuos validos: 132 - Cantidad de unicos: 10
+
+Top 10 de la poblaci▒n:
+
+Individuo 1:
+  Costo total: 106993.33
+  Ruta: Jujuy -> Salta -> Santiago del Estero -> C▒rdoba -> San Luis -> Mendoza -> Neuqu▒n -> Chubut -> Santa Cruz -> Tierra del Fuego
+  Tiempo total: 74 horas 59 minutos
+  Distancia total: 5360.00 km
+  Cromosoma crudo: [('Jujuy', 'Salta', 353, 250, 1500), ('Salta', 'Santiago del Estero', 431, 438, 900), ('Santiago del Estero', 'C▒rdoba', 430, 436, 720), ('C▒rdoba', 'San Luis', 180, 300, 200), ('San Luis', 'Mendoza', 186, 258, 975), ('Mendoza', 'Neuqu▒n', 562, 788, 3600), ('Neuqu▒n', 'Chubut', 708, 951, 3200), ('Chubut', 'Santa Cruz', 831, 960, 4000), ('Santa Cruz', 'Tierra del Fuego', 818, 979, 4000)]
+
+Individuo 2:
+  Costo total: 109190.00
+  Ruta: Jujuy -> Salta -> Catamarca -> C▒rdoba -> San Luis -> Mendoza -> Neuqu▒n -> Chubut -> Santa Cruz -> Tierra del Fuego
+  Tiempo total: 76 horas 15 minutos
+  Distancia total: 5466.00 km
+  Cromosoma crudo: [('Jujuy', 'Salta', 353, 250, 1500), ('Salta', 'Catamarca', 519, 537, 1800), ('Catamarca', 'C▒rdoba', 418, 443, 300), ('C▒rdoba', 'San Luis', 180, 300, 200), ('San Luis', 'Mendoza', 186, 258, 975), ('Mendoza', 'Neuqu▒n', 562, 788, 3600), ('Neuqu▒n', 'Chubut', 708, 951, 3200), ('Chubut', 'Santa Cruz', 831, 960, 4000), ('Santa Cruz', 'Tierra del Fuego', 818, 979, 4000)]
+
+Individuo 3:
+  Costo total: 116958.33
+  Ruta: Jujuy -> Salta -> Santiago del Estero -> C▒rdoba -> San Luis -> Mendoza -> Neuqu▒n -> R▒o Negro -> Chubut -> Santa Cruz -> Tierra del Fuego
+  Tiempo total: 78 horas 56 minutos
+  Distancia total: 5838.00 km
+  Cromosoma crudo: [('Jujuy', 'Salta', 353, 250, 1500), ('Salta', 'Santiago del Estero', 431, 438, 900), ('Santiago del Estero', 'C▒rdoba', 430, 436, 720), ('C▒rdoba', 'San Luis', 180, 300, 200), ('San Luis', 'Mendoza', 186, 258, 975), ('Mendoza', 'Neuqu▒n', 562, 788, 3600), ('Neuqu▒n', 'R▒o Negro', 405, 556, 3000), ('R▒o Negro', 'Chubut', 540, 873, 2600), ('Chubut', 'Santa Cruz', 831, 960, 4000), ('Santa Cruz', 'Tierra del Fuego', 818, 979, 4000)]
+
+Individuo 4:
+  Costo total: 118561.67
+  Ruta: Jujuy -> Salta -> Santiago del Estero -> C▒rdoba -> La Rioja -> San Luis -> Mendoza -> Neuqu▒n -> Chubut -> Santa Cruz -> Tierra del Fuego
+  Tiempo total: 82 horas 4 minutos
+  Distancia total: 5984.00 km
+  Cromosoma crudo: [('Jujuy', 'Salta', 353, 250, 1500), ('Salta', 'Santiago del Estero', 431, 438, 900), ('Santiago del Estero', 'C▒rdoba', 430, 436, 720), ('C▒rdoba', 'La Rioja', 240, 400, 300), ('La Rioja', 'San Luis', 365, 524, 1400), ('San Luis', 'Mendoza', 186, 258, 975), ('Mendoza', 'Neuqu▒n', 562, 788, 3600), ('Neuqu▒n', 'Chubut', 708, 951, 3200), ('Chubut', 'Santa Cruz', 831, 960, 4000), ('Santa Cruz', 'Tierra del Fuego', 818, 979, 4000)]
+
+Individuo 5:
+  Costo total: 118642.67
+  Ruta: Jujuy -> Salta -> Santiago del Estero -> C▒rdoba -> Buenos Aires -> La Pampa -> R▒o Negro -> Chubut -> Santa Cruz -> Tierra del Fuego
+  Tiempo total: 79 horas 43 minutos
+  Distancia total: 6073.00 km
+  Cromosoma crudo: [('Jujuy', 'Salta', 353, 250, 1500), ('Salta', 'Santiago del Estero', 431, 438, 900), ('Santiago del Estero', 'C▒rdoba', 430, 436, 720), ('C▒rdoba', 'Buenos Aires', 420, 700, 600), ('Buenos Aires', 'La Pampa', 600, 837, 4306), ('La Pampa', 'R▒o Negro', 360, 600, 950), ('R▒o Negro', 'Chubut', 540, 873, 2600), ('Chubut', 'Santa Cruz', 831, 960, 4000), ('Santa Cruz', 'Tierra del Fuego', 818, 979, 4000)]
+
+Individuo 6:
+  Costo total: 118761.67
+  Ruta: Jujuy -> Salta -> Catamarca -> Tucum▒n -> Santiago del Estero -> C▒rdoba -> San Luis -> La Pampa -> R▒o Negro -> Chubut -> Santa Cruz -> Tierra del Fuego
+  Tiempo total: 81 horas 1 minutos
+  Distancia total: 5966.00 km
+  Cromosoma crudo: [('Jujuy', 'Salta', 353, 250, 1500), ('Salta', 'Catamarca', 519, 537, 1800), ('Catamarca', 'Tucum▒n', 185, 232, 1500), ('Tucum▒n', 'Santiago del Estero', 144, 161, 900), ('Santiago del Estero', 'C▒rdoba', 430, 436, 720), ('C▒rdoba', 'San Luis', 180, 300, 200), ('San Luis', 'La Pampa', 501, 638, 3000), ('La Pampa', 'R▒o Negro', 360, 600, 950), ('R▒o Negro', 'Chubut', 540, 873, 2600), ('Chubut', 'Santa Cruz', 831, 960, 4000), ('Santa Cruz', 'Tierra del Fuego', 818, 979, 4000)]
+
+Individuo 7:
+  Costo total: 120026.00
+  Ruta: Jujuy -> Salta -> Tucum▒n -> Santiago del Estero -> C▒rdoba -> Buenos Aires -> La Pampa -> R▒o Negro -> Chubut -> Santa Cruz -> Tierra del Fuego
+  Tiempo total: 78 horas 36 minutos
+  Distancia total: 6156.00 km
+  Cromosoma crudo: [('Jujuy', 'Salta', 353, 250, 1500), ('Salta', 'Tucum▒n', 220, 360, 250), ('Tucum▒n', 'Santiago del Estero', 144, 161, 900), ('Santiago del Estero', 'C▒rdoba', 430, 436, 720), ('C▒rdoba', 'Buenos Aires', 420, 700, 600), ('Buenos Aires', 'La Pampa', 600, 837, 4306), ('La Pampa', 'R▒o Negro', 360, 600, 950), ('R▒o Negro', 'Chubut', 540, 873, 2600), ('Chubut', 'Santa Cruz', 831, 960, 4000), ('Santa Cruz', 'Tierra del Fuego', 818, 979, 4000)]
+
+Individuo 8:
+  Costo total: 120758.33
+  Ruta: Jujuy -> Salta -> Catamarca -> C▒rdoba -> La Rioja -> San Luis -> Mendoza -> Neuqu▒n -> Chubut -> Santa Cruz -> Tierra del Fuego
+  Tiempo total: 83 horas 20 minutos
+  Distancia total: 6090.00 km
+  Cromosoma crudo: [('Jujuy', 'Salta', 353, 250, 1500), ('Salta', 'Catamarca', 519, 537, 1800), ('Catamarca', 'C▒rdoba', 418, 443, 300), ('C▒rdoba', 'La Rioja', 240, 400, 300), ('La Rioja', 'San Luis', 365, 524, 1400), ('San Luis', 'Mendoza', 186, 258, 975), ('Mendoza', 'Neuqu▒n', 562, 788, 3600), ('Neuqu▒n', 'Chubut', 708, 951, 3200), ('Chubut', 'Santa Cruz', 831, 960, 4000), ('Santa Cruz', 'Tierra del Fuego', 818, 979, 4000)]
+
+Individuo 9:
+  Costo total: 123648.33
+  Ruta: Jujuy -> Salta -> Catamarca -> C▒rdoba -> San Luis -> La Pampa -> R▒o Negro -> Neuqu▒n -> Chubut -> Santa Cruz -> Tierra del Fuego
+  Tiempo total: 84 horas 53 minutos
+  Distancia total: 6214.00 km
+  Cromosoma crudo: [('Jujuy', 'Salta', 353, 250, 1500), ('Salta', 'Catamarca', 519, 537, 1800), ('Catamarca', 'C▒rdoba', 418, 443, 300), ('C▒rdoba', 'San Luis', 180, 300, 200), ('San Luis', 'La Pampa', 501, 638, 3000), ('La Pampa', 'R▒o Negro', 360, 600, 950), ('R▒o Negro', 'Neuqu▒n', 405, 556, 3000), ('Neuqu▒n', 'Chubut', 708, 951, 3200), ('Chubut', 'Santa Cruz', 831, 960, 4000), ('Santa Cruz', 'Tierra del Fuego', 818, 979, 4000)]
+
+Individuo 10:
+  Costo total: 131681.00
+  Ruta: Jujuy -> Salta -> Catamarca -> Tucum▒n -> Santiago del Estero -> Santa Fe -> Buenos Aires -> La Pampa -> R▒o Negro -> Chubut -> Santa Cruz -> Tierra del Fuego
+  Tiempo total: 83 horas 54 minutos
+  Distancia total: 6425.00 km
+  Cromosoma crudo: [('Jujuy', 'Salta', 353, 250, 1500), ('Salta', 'Catamarca', 519, 537, 1800), ('Catamarca', 'Tucum▒n', 185, 232, 1500), ('Tucum▒n', 'Santiago del Estero', 144, 161, 900), ('Santiago del Estero', 'Santa Fe', 384, 516, 1800), ('Santa Fe', 'Buenos Aires', 300, 480, 3560), ('Buenos Aires', 'La Pampa', 600, 837, 4306), ('La Pampa', 'R▒o Negro', 360, 600, 950), ('R▒o Negro', 'Chubut', 540, 873, 2600), ('Chubut', 'Santa Cruz', 831, 960, 4000), ('Santa Cruz', 'Tierra del Fuego', 818, 979, 4000)]
+

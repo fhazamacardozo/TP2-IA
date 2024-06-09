@@ -1,12 +1,12 @@
 # Parámetros del algoritmo
-tamano_poblacion = 200
-num_generaciones = 50
-probabilidad_cruzamiento = 0.8
-probabilidad_mutacion = 0.2
+tamano_poblacion = 5000
+num_generaciones = 10
+probabilidad_cruzamiento = 0.5
+probabilidad_mutacion = 0.3
 
 # Rutas
-origen = 'L'
-destino = 'C'
+origen = 'Jujuy'
+destino = 'Tierra del Fuego'
 
 # Datos del vehículo
 datos_vehiculo = {

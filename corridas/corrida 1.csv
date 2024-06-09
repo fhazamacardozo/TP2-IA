@@ -1,0 +1,23 @@
+Individuos poblacion inicial:  1000
+Generacion 0 - Cantidad de individuos validos: 1000 - Cantidad de unicos: 1000
+Generacion 1 - Cantidad de individuos validos: 11 - Cantidad de unicos: 11
+Generacion 2 - Cantidad de individuos validos: 20 - Cantidad de unicos: 4
+Generacion 3 - Cantidad de individuos validos: 26 - Cantidad de unicos: 3
+Generacion 4 - Cantidad de individuos validos: 33 - Cantidad de unicos: 2
+Generacion 5 - Cantidad de individuos validos: 41 - Cantidad de unicos: 2
+
+Top 10 de la poblacion:
+
+Individuo 1:
+  Costo total: 106585.00
+  Ruta: Jujuy -> Salta -> Catamarca -> La Rioja -> San Juan -> Mendoza -> Neuquen -> Chubut -> Santa Cruz -> Tierra del Fuego
+  Tiempo total: 74 horas 36 minutos
+  Distancia total: 5235.00 km
+  Cromosoma crudo: [('Jujuy', 'Salta', 353, 250, 1500), ('Salta', 'Catamarca', 519, 537, 1800), ('Catamarca', 'La Rioja', 120, 157, 700), ('La Rioja', 'San Juan', 423, 443, 1200), ('San Juan', 'Mendoza', 142, 170, 600), ('Mendoza', 'Neuqu▒n', 562, 788, 3600), ('Neuqu▒n', 'Chubut', 708, 951, 3200), ('Chubut', 'Santa Cruz', 831, 960, 4000), ('Santa Cruz', 'Tierra del Fuego', 818, 979, 4000)]
+
+Individuo 2:
+  Costo total: 109671.67
+  Ruta: Jujuy -> Salta -> Catamarca -> La Rioja -> San Luis -> Mendoza -> Neuquen -> Chubut -> Santa Cruz -> Tierra del Fuego
+  Tiempo total: 74 horas 22 minutos
+  Distancia total: 5404.00 km
+  Cromosoma crudo: [('Jujuy', 'Salta', 353, 250, 1500), ('Salta', 'Catamarca', 519, 537, 1800), ('Catamarca', 'La Rioja', 120, 157, 700), ('La Rioja', 'San Luis', 365, 524, 1400), ('San Luis', 'Mendoza', 186, 258, 975), ('Mendoza', 'Neuqu▒n', 562, 788, 3600), ('Neuqu▒n', 'Chubut', 708, 951, 3200), ('Chubut', 'Santa Cruz', 831, 960, 4000), ('Santa Cruz', 'Tierra del Fuego', 818, 979, 4000)]
